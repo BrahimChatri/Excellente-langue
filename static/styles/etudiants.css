@@ -1,0 +1,73 @@
+body {
+    background-image: url('../background.svg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(209, 201, 247);
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    background-color: #b5a7eb;
+}
+
+.student-login, .student-services {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: rgb(209, 201, 247);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b5a7eb;
+}
+
+.student-services ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.student-services ul li {
+    margin: 10px 0;
+}

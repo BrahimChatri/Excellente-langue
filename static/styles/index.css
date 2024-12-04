@@ -1,0 +1,72 @@
+body {
+    background-image: url('../background.svg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(209, 201, 247);
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    background-color: #b5a7eb;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.student-details table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.student-details th, .student-details td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.student-details th {
+    background-color: rgb(182, 170, 170);
+}
+
+.student-details tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

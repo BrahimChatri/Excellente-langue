@@ -1,80 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <body style="background-image:url('static/background.svg');">
-        <center>
-            <h2 style="padding: 0cqis; color:rgb(255, 255, 255);">Excellente langue🎓📚 - Inscription</h2>
-        </center>
-        
-        <center>
-            <a href="/" style="width: 300px; height: 50px; background-color:rgb(209, 201, 247); display: inline-block; margin: 5px;">
-                <button style="width: 100%; height: 100%; background-color:rgb(209, 201, 247); border: none;">
-                    <h3>Accueil</h3>
-                </button>
-            </a>
-            <a href="inscription" style="width: 300px; height: 50px; background-color:rgb(209, 201, 247); display: inline-block; margin: 5px;">
-                <button style="width: 100%; height: 100%; background-color:rgb(209, 201, 247); border: none;">
-                    <h3>Inscription & Les Prix</h3>
-                </button>
-            </a>
-            <a href="etudiants" style="width: 300px; height: 50px; background-color:rgb(209, 201, 247); display: inline-block; margin: 5px;">
-                <button style="width: 100%; height: 100%; background-color:rgb(209, 201, 247); border: none;">
-                    <h3>Étudiants</h3>
-                </button>
-            </a>
-        </center>
-
-        <center>
-            <h1 style="color: rgb(241, 241, 232); font-style: oblique; font-family: Algerian;">Formulaire d'Inscription</h1>
-        </center>
-
-        <center>
-            <form style="background-color: rgba(255,255,255,0.2); padding: 20px; width: 400px; color: white;">
-                <input type="text" placeholder="Nom" style="width: 100%; margin: 10px 0; padding: 10px;">
-                <input type="text" placeholder="Prénom" style="width: 100%; margin: 10px 0; padding: 10px;">
-                <input type="email" placeholder="Email" style="width: 100%; margin: 10px 0; padding: 10px;">
-                <input type="tel" placeholder="Téléphone" style="width: 100%; margin: 10px 0; padding: 10px;">
-                
-                <select style="width: 100%; margin: 10px 0; padding: 10px;">
-                    <option>Choisir une langue</option>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="static/styles/inscription.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Excellente langue 🎓📚</h1>
+        <nav class="navigation">
+            <a href="/">Accueil</a>
+            <a href="inscription">Inscription & Les Prix</a>
+            <a href="etudiants">Étudiants</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Formulaire d'Inscription</h2>
+            <form>
+                <input type="text" placeholder="Nom" required>
+                <input type="text" placeholder="Prénom" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Téléphone" required>
+                <select required>
+                    <option value="">Choisir une langue</option>
                     <option>Anglais</option>
                     <option>Français</option>
                     <option>Espagnol</option>
-                    <option>Allemand</option>
-                    <option>Japonais</option>
                 </select>
-
-                <button style="width: 100%; padding: 10px; background-color:rgb(209, 201, 247); border: none; margin: 10px 0;">
-                    S'inscrire
-                </button>
+                <button type="submit">S'inscrire</button>
             </form>
-        </center>
-
-        <center style="margin-top: 20px;">
-            <table border="1" style="background-color: white; width: 600px;">
-                <tr style="background-color: rgb(182, 170, 170);">
-                    <th colspan="3">Tarifs des Formations</th>
-                </tr>
-                <tr>
-                    <th>Langue</th>
-                    <th>Durée</th>
-                    <th>Prix</th>
-                </tr>
-                <tr>
-                    <td>Anglais</td>
-                    <td>6 mois</td>
-                    <td>1500 Dh</td>
-                </tr>
-                <tr>
-                    <td>Français</td>
-                    <td>9 mois</td>
-                    <td>2000 Dh</td>
-                </tr>
-                <tr>
-                    <td>Espagnol</td>
-                    <td>9 mois</td>
-                    <td>2000 Dh</td>
-                </tr>
+        </section>
+        <section class="pricing">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Langue</th>
+                        <th>Durée</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Anglais</td><td>6 mois</td><td>1500 Dh</td></tr>
+                    <tr><td>Français</td><td>9 mois</td><td>2000 Dh</td></tr>
+                    <tr><td>Espagnol</td><td>9 mois</td><td>2000 Dh</td></tr>
+                </tbody>
             </table>
-        </center>
-    </body>
+        </section>
+    </main>
+</body>
 </html>
